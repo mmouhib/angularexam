@@ -1,0 +1,33 @@
+<div>
+  <p><b>login</b></p>
+  <form [formGroup]="addPostForm">
+    <div *ngIf="this.addPostForm.controls['title'].invalid && this.addPostForm.controls['title'].touched">
+      <p *ngIf="this.addPostForm.controls['title'].hasError('required')">title required</p>
+      <p *ngIf="this.addPostForm.controls['title'].hasError('minlength')">title min 3 car</p>
+    </div>
+    <input type="text" name="title" id="title" placeholder="title" formControlName="title">
+
+    <br>
+
+
+    <div *ngIf="this.addPostForm.controls['content'].invalid &&  this.addPostForm.controls['content'].touched">
+      <span *ngIf="this.addPostForm.controls['content'].hasError('required')">content must not be empty</span>
+    </div>
+    <input type="text" name="content" id="content" placeholder="content" formControlName="content">
+
+    <br>
+
+
+    <div *ngIf="this.addPostForm.controls['author'].invalid &&  this.addPostForm.controls['author'].touched">
+      <span *ngIf="this.addPostForm.controls['author'].hasError('required')">author must not be empty</span>
+    </div>
+    <input type="text" name="author" id="author" placeholder="author" formControlName="author">
+
+    <br>
+
+
+    <input type="submit" value="login" (click)="navigate()" [disabled]="addPostForm.invalid">
+
+  </form>
+
+</div>

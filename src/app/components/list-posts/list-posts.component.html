@@ -1,0 +1,12 @@
+<br>
+<br>
+<br>
+<button><a routerLink="/addpost">ajouter un post</a></button>
+<div>
+  <div *ngFor="let post of posts">
+    <p>{{post.content}}</p>
+      <td><button [routerLink]="['/postdetail',post.id]">details</button></td>
+      <td><button [routerLink]="['/addtask',post.id]">like</button></td>
+      <td><button [routerLink]="['/addtask',post.id]">partager</button></td>
+  </div>
+</div>

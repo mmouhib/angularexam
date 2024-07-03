@@ -1,35 +1,53 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "post 1",
       "content": "This is content 1",
       "author": "mouhib",
       "likes": 112
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "post 2",
       "content": "This is content 2",
       "author": "mohbi",
       "likes": 23
+    },
+    {
+      "id": "fc90",
+      "title": "dqsd",
+      "content": "dsqd",
+      "author": "qsd"
+    },
+    {
+      "id": "1b67",
+      "title": "AAAAAAAAAAA",
+      "content": "AAAAAAAA",
+      "author": "AAAAAAAAAAA"
+    },
+    {
+      "id": "a18b",
+      "title": "aaa",
+      "content": "AAAAAAAA",
+      "author": "sddd"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "postId": 1,
       "author": "mohbi",
       "content": "This is content 2"
     },
     {
-      "id": 2,
-      "postId": 1,
+      "id": "2",
+      "postId": 3,
       "author": "mouni",
       "content": "This is content 3"
     },
     {
-      "id": 3,
+      "id": "3",
       "postId": 2,
       "author": "molka",
       "content": "This is content 2"

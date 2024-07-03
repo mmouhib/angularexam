@@ -1,0 +1,14 @@
+<div>{{this.postId}}</div>
+<div>{{this.post.title}}</div>
+<div>{{this.post.content}}</div>
+<div>{{this.post.author}}</div>
+<div>{{this.post.likes}}</div>
+
+
+<p>comments:</p>
+
+<div *ngFor="let comment of newComments">
+  <p>{{comment.id}}</p>
+  <p>{{comment.author}}</p>
+  <p>{{comment.content}}</p>
+</div>
